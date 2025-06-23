@@ -22,7 +22,7 @@ export default function HistoryPage() {
       }
 
       try {
-        const res = await fetch('http://localhost:8000/get_transactions', {
+        const res = await fetch('https://python-image-credit.onrender.com/get_transactions', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email })
