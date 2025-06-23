@@ -38,7 +38,7 @@ export default function HomePage() {
       formData.append('email', email)
 
       // POST to your FastAPI upload route
-      const res = await fetch('http://localhost:8000/upload', {
+      const res = await fetch('https://python-image-credit.onrender.com/upload', {
         method: 'POST',
         body: formData
       })
